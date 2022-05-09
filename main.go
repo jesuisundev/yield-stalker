@@ -10,7 +10,7 @@ func main() {
 
 	router.GET("/hello", func(context *gin.Context) { hello(context) })
 
-	router.GET("/pair", func(context *gin.Context) { pair.Pair(context) })
+	router.POST("/pair", func(context *gin.Context) { pair.PostPair(context) })
 
 	router.Run()
 }
